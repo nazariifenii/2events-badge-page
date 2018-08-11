@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Покупка квитків, попутники, заходи, організація подій на 2EVENT - безкоштовна мобільна соціальна мережа.</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Latest compiled and minified CSS -->
+</head>
+
+<body>
+	<div class="container text-center backround-white main-content">
+		<div class="row-fluid">
+			<h4 class="text-uppercase">Создать бейдж</h4>
+		</div>
+
+		<div class="row-fluid text-left">
+			<div class="div-section-header-title">
+				<span class="menu-item-counter">1</span>
+				<p class="text-uppercase margin-bottom-zero">Размер бейджа</p>
+			</div>
+
+			<hr class="margin-top-zero" />
+			<div class="container">
+				<div class="div-badge-size text-left">
+					<label class="radio-inline">
+						<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> A6
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Под чехол А6
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 10х6см
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="row-fluid text-left">
+			<div class="div-section-header-title">
+				<span class="menu-item-counter">2</span>
+				<p class="text-uppercase margin-bottom-zero">Визуальное представление</p>
+			</div>
+			<hr class="margin-top-zero" />
+			<div class="container">
+				<div class="row-fluid">
+					<div class="col-md-5 div-choose-role">
+						<div class="badge-header">
+							<p class="margin-bottom-zero">Предпросмотр бейджа</p>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+								 aria-expanded="false">
+									Organizator
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+									<li>
+										<a href="">Organizator</a>
+									</li>
+									<li>
+										<a href="">Organizator1</a>
+									</li>
+								</ul>
+							</div>
+							<button type="button" class="btn btn-primary">OK</button>
+						</div>
+						<div class="badge">sadsa</div>
+					</div>
+					<div class="col-md-7 row-fluid download-requirements">
+						<div class="download-background">
+							<div class="upload-drop-zone col-md-3" id="drop-zone">
+								<span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+								Загрузить фон
+							</div>
+							<div class="col-md-6">
+								<div class="download-requirements-text">
+									<span class="color-red inline">*</span>
+									<p>Рекомендованный размер
+										<b>1240х1748px</b> (форматы *.png, *.jpg)
+										<br/>
+										<br/>(рекомендуєм размещать на фоне в верхней части логотип мероприятия, в нижней части - логотипы спонсоров)</p>
+								</div>
+								<div class="div-download-badge-template">
+									<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+									<a>Скачать шаблон бейджа *.psd</a>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid div-choose-role-color">
+							<p class="text-uppercase">РОЛИ НА МЕРОПРИЯТИИ:
+								<span class="color-red inline">*</span>
+							</p>
+							<ul>
+								<li class="li-role-color-picker">
+									<div class="dropdown">
+										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+										 aria-expanded="false">
+											Organizator
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+											<li>
+												<a href="">Organizator</a>
+											</li>
+											<li>
+												<a href="">Organizator1</a>
+											</li>
+										</ul>
+									</div>
+									<div id="cp2" class="input-group colorpicker-component col-md-3">
+										<span class="input-group-addon">
+											<i></i>
+										</span>
+										<input type="text" value="#00AABB" class="form-control" />
+									</div>
+									<button type="button" class="close" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<button type="button" class="btn btn-primary button-add-role">Добавить роль</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="row-fluid text-left">
+			<div class="div-section-header-title">
+				<span class="menu-item-counter">3</span>
+				<p class="text-uppercase margin-bottom-zero">Список людей и их роли на мероприятии (организаторы, участники)</p>
+			</div>
+			<hr class="margin-top-zero" />
+			<div class="container">
+				<div class="row-fluid">
+					<div class="container">
+						<p>Здесь вы можете отредактировать список людей, для которых нужно создать бейдж (добавить человека, изменить ФИО, компанию,
+							должность ) </p>
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>№</th>
+									<th>ФИО</th>
+									<th>Компания</th>
+									<th>Тип</th>
+									<th>Дата</th>
+									<th>Роль</th>
+									<th>Бейдж</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>John</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+								</tr>
+								<tr>
+									<td>John</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+								</tr>
+								<tr>
+									<td>John</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+								</tr>
+								<tr>
+									<td>John</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+									<td>Doe</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+
+</body>
+
+</html>

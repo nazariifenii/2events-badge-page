@@ -1,0 +1,125 @@
+$light-grey: #ebeef0;
+$white: #fff;
+$light-blue: #44a3db;
+$margin-main-content-left: 40px;
+
+body {
+  background-color: $light-grey;
+}
+
+.backround-white {
+  background-color: $white;
+}
+
+.main-content {
+  margin-top: 15px;
+  padding-top: 20px;
+}
+
+.margin-top-zero {
+  margin-top: 0;
+}
+
+.div-section-header-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 45px 0 6px;
+}
+
+.menu-item-counter {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  color: $white;
+  margin-right: 10px;
+  background-color: $light-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.margin-bottom-zero {
+  margin-bottom: 0;
+}
+
+.div-choose-role {
+  outline: 1px solid #ccc;
+  //margin-left: 40px;
+  padding: 0;
+}
+
+.upload-drop-zone {
+  height: 200px;
+  border-width: 2px;
+  //maß
+}
+
+.upload-drop-zone {
+  color: #ccc;
+  border-style: dashed;
+  border-color: #ccc;
+  line-height: 200px;
+  text-align: center;
+}
+
+.upload-drop-zone.drop {
+  color: #222;
+  border-color: #222;
+}
+
+.badge-header {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  outline: 1px solid #ccc;
+  padding: 10px;
+}
+
+.badge {
+  background-color: #44a3db;
+  height: 541px;
+  display: block;
+  margin: 10px;
+}
+.download-background {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.color-red {
+  color: red;
+}
+
+.download-requirements-text {
+  display: flex;
+}
+
+.div-download-badge-template {
+  margin-top: 10px;
+}
+
+.glyphicon {
+  margin-right: 5px;
+}
+
+.div-choose-role-color {
+  margin-top: 30px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.li-role-color-picker {
+  display: flex;
+  flex-direction: row;
+}
+.button-add-role {
+  margin-left: auto;
+}
