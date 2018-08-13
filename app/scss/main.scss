@@ -5,6 +5,7 @@ $margin-main-content-left: 40px;
 
 body {
   background-color: $light-grey;
+  margin-bottom: 45px;
 }
 
 .backround-white {
@@ -121,5 +122,12 @@ li {
   flex-direction: row;
 }
 .button-add-role {
+  margin-left: auto;
+}
+.div-buttons-list-end {
+  padding-bottom: 80px;
+}
+
+.button-generate {
   margin-left: auto;
 }
