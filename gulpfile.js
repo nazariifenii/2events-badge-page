@@ -42,8 +42,8 @@ gulp.task("scripts", function() {
     .src([
       // Берем все необходимые библиотеки
       "app/libs/jquery/dist/jquery.min.js", // Берем jQuery
-      "app/libs/magnific-popup/dist/jquery.magnific-popup.min.js", // Берем Magnific Popup
-      "app/libs/bootstrap/dist/js/bootstrap.min.js"
+      "app/libs/bootstrap/dist/js/bootstrap.min.js",
+      "app/js/common.js" // Берем Magnific Popup
     ])
     .pipe(concat("libs.min.js")) // Собираем их в кучу в новом файле libs.min.js
     .pipe(uglify()) // Сжимаем JS файл
