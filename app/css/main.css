@@ -215,7 +215,13 @@ li {
   .es-hidden {
     display: none !important; }
   .btn {
-    font-size: 12px; } }
+    font-size: 12px !important; }
+  .img-qr {
+    width: 50px !important; }
+  .div-badge {
+    height: 430px !important; }
+  .p-scan {
+    font-size: 9px !important; } }
 
 #outlook a {
   padding: 0; }
@@ -245,15 +251,18 @@ a[x-apple-data-detectors] {
 
 #drop-area {
   border: 2px dashed #ccc;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
   width: 480px;
   font-family: sans-serif;
   margin: auto;
-  padding: 20px; }
+  padding: 20px;
+  color: #44a3db; }
 
 #drop-area.highlight {
   border-color: purple; }
+
+.labelFile {
+  background-color: white !important;
+  border: none !important; }
 
 p {
   margin-top: 0; }
