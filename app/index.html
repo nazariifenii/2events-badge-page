@@ -8,7 +8,7 @@
 	<!-- Latest compiled JavaScript -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	    crossorigin="anonymous">
-	<link href="css/bootstrap-colorpicker.css" rel="stylesheet">
+	    <link rel="stylesheet" href="css/colorpicker.css">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<!-- Latest compiled and minified CSS -->
@@ -257,27 +257,7 @@
 																			</tr>
 																			<tr style="border-collapse:collapse;">
 																				<td align="left" esdev-eq="false" style="padding:0;Margin:0;padding-top:20px;padding-left:20px;padding-right:20px;">
-																					<table cellpadding="0" cellspacing="0" class="es-left" align="left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left;width:33.33%;">
-																						<tbody>
-																							<tr style="border-collapse:collapse;">
-																								<td class="es-m-p0r es-m-p20b" align="center" style="padding:0;Margin:0;width: 65px;">
-																									<table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
-																										<tbody>
-																											<tr style="border-collapse:collapse;">
-																												<td align="left" style="padding:0;Margin:0;">
-																													<a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-size:14px;text-decoration:underline;color:#1376C8;">
-																														<img src="https://evprg.stripocdn.email/content/guids/1234/images/5662886201487156934307.png" alt="" width="50"
-																														    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;"> </a>
-																												</td>
-																											</tr>
-																										</tbody>
-																									</table>
-																								</td>
-																							</tr>
-																						</tbody>
-																					</table>
-																					<!--[if mso]></td><td width="85" valign="top"><![endif]-->
-																					<table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left;width:33.33%;">
+																					<table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left;width:100%;">
 																						<tbody>
 																							<tr style="border-collapse:collapse;">
 																								<td class="es-m-p20b" align="center" style="padding:0;Margin:0; width: 65px;">
@@ -286,33 +266,13 @@
 																											<tr style="border-collapse:collapse;">
 																												<td align="center" style="padding:0;Margin:0;">
 																													<a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-size:14px;text-decoration:underline;color:#1376C8;">
-																														<img src="https://evprg.stripocdn.email/content/guids/1234/images/5662886201487156934307.png" alt="" width="50"
+																														<img id="logoImage" src="https://evprg.stripocdn.email/content/guids/1234/images/5662886201487156934307.png" alt="" height="50"
 																														    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;"> </a>
 																												</td>
 																											</tr>
 																										</tbody>
 																									</table>
 																								</td>																								
-																							</tr>
-																						</tbody>
-																					</table>
-																					<!--[if mso]></td><td width="65" valign="top"><![endif]-->
-																					<table cellpadding="0" cellspacing="0" class="es-left" align="left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left;width:33.33%;">
-																						<tbody>
-																							<tr style="border-collapse:collapse;">
-																								<td class="es-m-p20b" align="right" style="padding:0;Margin:0;width:65px;">
-																									<table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right;">
-																										<tbody>
-																											<tr style="border-collapse:collapse;">
-																												<td align="right" style="padding:0;Margin:0;">
-																													<a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-size:14px;text-decoration:underline;color:#1376C8;">
-																														<img src="https://evprg.stripocdn.email/content/guids/1234/images/5662886201487156934307.png" alt="" width="50"
-																														    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;"> </a>
-																												</td>
-																											</tr>
-																										</tbody>
-																									</table>
-																								</td>
 																							</tr>
 																						</tbody>
 																					</table>
@@ -369,49 +329,44 @@
 							</body>
 						</div>
 					</div>
-					<div class="col-xl-7 mt-5 download-requirements">
+					<div class="col-xl-7 mt-xl-0 mt-5 download-requirements">
 						<div class="row-fluid download-background d-flex align-items-start flex-md-row flex-column">
-							<div id="drop-area" class="col-md-4 col-12 py-5">
+							<div class="drop-area col-md-3 col-12 py-5">
 								<form id="dropContainer" class="my-form">
-									<input type="file" id="fileElem">
-									<label class="button labelFile d-flex flex-column align-items-center text-center" for="fileElem">
-										<img src="img/camera-icon.png" style="height: 60px; width: 60px;"/>
-										<span>Загрузить фон</span>
+									<input class="file-input" type="file" id="fileBackground">
+									<label class="button labelFile d-flex flex-column align-items-center text-center" for="fileBackground">
+										<img src="img/camera-icon.png" style="height: 36px; width: 36px;"/>
+										<span class="text-uppercase font-13">Загрузить фон</span>
 									</label>
 								</form>
 							</div>
 							<div class="col-md col-12 mt-md-0 mt-3 p-md-2 p-0 align-self-end">
 								<div class="download-requirements-text">
-									<span class="color-red inline">*</span>
-									<p>Рекомендованный размер
-										<b>1240х1748px</b> (форматы *.png, *.jpg)
-										<br/>
-										<br/>(рекомендуєм размещать на фоне в верхней части логотип мероприятия, в нижней части - логотипы спонсоров)</p>
+									<span class="color-red inline mx-1">*</span>
+									<p>Рекомендованный размер<b>1240х1748px</b> (форматы *.png, *.jpg)<br/><br/>(рекомендуєм размещать на фоне в верхней части логотип мероприятия, в нижней части - логотипы спонсоров)</p>
 								</div>
 								<div class="div-download-badge-template">
 									<span class="fas fa-download-alt" aria-hidden="true"></span>
-									<a href="#"><img src="img/download-icon.png" style="height: 20px;"/> Скачать шаблон бейджа *.psd</a>
+									<a href="#"><img src="img/download-icon.png" style="height: 16px;"/> Скачать шаблон бейджа *.psd</a>
 								</div>
 							</div>
 						</div>
 						<div class="row-fluid div-choose-role-color">
-							<p class="text-uppercase">РОЛИ НА МЕРОПРИЯТИИ:
-								<span class="color-red inline">*</span>
-							</p>
+							<p class="text-uppercase"><b>РОЛИ НА МЕРОПРИЯТИИ:</b><span class="color-red inline mx-1">*</span></p>
 							<ul>
 								<li class="li-role-color-picker">
 									<div class="row ml-0 w-100">
-										<select class="form-control col-md-4 col">
+										<select class="form-control col-md-3 col">
 											<option>Организатор</option>
 											<option>Учасник</option>
 											<option>Спикер</option>
 											<option>Пресса</option>
 										</select>
-										<div id="cp2" class="input-group colorpicker-component col-md-3 col">
-											<span class="input-group-addon">
+										<div class="input-group input-color-picker colorpicker-component col-md-4 col">
+											<span class="input-group-addon d-flex justify-content-center align-items-center">
 												<i></i>
 											</span>
-											<input type="text" class="input-color-picker form-control" value="#00aabb"/>
+											<input type="text" class="form-control" value="#00aabb"/>
 										</div>
 										<button type="button" class="close" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
@@ -420,27 +375,44 @@
 								</li>
 								<li class="li-role-color-picker">
 									<div class="row ml-0 w-100">
-										<select class="form-control col-md-4 col">
+										<select class="form-control col-md-3 col">
 											<option>Организатор</option>
 											<option>Учасник</option>
 											<option>Спикер</option>
 											<option>Пресса</option>
 										</select>
-										<div id="cp2" class="input-group colorpicker-component col-md-3 col">
-											<span class="input-group-addon">
+										<div class="input-group input-color-picker colorpicker-component col-md-4 col">
+											<span class="input-group-addon d-flex justify-content-center align-items-center">
 												<i></i>
 											</span>
-											<input type="text" value="#00aabb" class="input-color-picker form-control" />
+											<input type="text" value="#00aabb" class="form-control" />
 										</div>
 										<button type="button" class="close" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>
 										<div class="col-md col-12 px-md-3 p-0 mt-md-0 mt-4">
-											<button type="button" class="btn btn-default button-add-role w-100">Добавить роль</button>
+											<button type="button" class="btn btn-blue button-add-role w-100">Добавить роль</button>
 										</div>
 									</div>
 								</li>
 							</ul>
+						</div>
+						<p class="text-uppercase mb-1 mt-4">логотипы спонсоров:</p>
+						<div class="row-fluid download-background d-flex align-items-start flex-md-row flex-column">
+							<div class="drop-area col-md col-12 py-1">
+								<form id="dropPartner" class="my-form">
+									<input class="file-input" type="file" id="filePartner">
+									<label class="button labelFile d-flex flex-column align-items-center text-center" for=filePartner>
+										<img src="img/camera-icon.png" style="height: 36px; width: 36px;"/>
+										<span class="text-uppercase font-13">Добавить изображение</span>
+									</label>
+								</form>
+							</div>
+							<div class="col-md col-12 mt-md-0 mt-3 p-md-2 p-0 align-self-end">
+								<div class="download-requirements-text">
+									<span class="color-red inline mx-1">*</span><p>Рекомендованный размер<b>1080pх 250px</b> (форматы *.png, *.jpg)</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -456,10 +428,30 @@
 			<div class="container">
 				<div class="row">
 					<div class="container col-md-12">
-						<p>Здесь вы можете отредактировать список людей, для которых нужно создать бейдж (добавить человека, изменить ФИО, компанию,
-							должность) </p>
+						<p>Выберите мероприятие, для которого вы хотите сгенерировать бейджи учасніков</p>
+						<p class="text-uppercase"><b>Название мероприятия:</b><span class="color-red inline mx-1">*</span></p>
+						<ul>
+							<li class="li-role-color-picker">
+								<div class="row ml-0 w-100">
+									<select class="form-control col-md-4 col">
+										<option value="" disabled selected>Выберите мероприятие</option>
+										<option>Организатор</option>
+										<option>Учасник</option>
+										<option>Спикер</option>
+										<option>Пресса</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+						<a href="#">Создать новое мероприятие на 2Event.com</a>
+						<hr/>
+						<p>Если у Вас не было продаж через 2Event, Вы можете загрузить список своих участников мероприятия с файла *.xls. (Ваши бейджи будут без  QR-кода, который можна будет сканировать через приложение 2Event (Android, iOS) при встрече между участниками, обмениваясь таким способом контактами).</p>
+						<p>Шаблон списка участников можно скачать здесь: <a href="#">шаблон списка участников.xls</a></p>
+						<button class="btn btn-blue">Загрузить свой .xls файл со списком  участников мероприятия</button>
+						<hr/>
+						<p>Здесь вы можете отредактировать список людей, для которых нужно создать бейдж (добавить человека, изменить ФИО, компанию, должность) </p>
 						<div class="table-responsive">
-							<table class="table table-hover text-center">
+							<table class="table table-hover">
 								<thead>
 									<tr>
 										<th>№</th>
@@ -468,7 +460,7 @@
 										<th>Тип</th>
 										<th>Дата</th>
 										<th>Роль</th>
-										<th>Бейдж</th>
+										<th class="text-center">Бейдж</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -486,7 +478,7 @@
 												<option>Пресса</option>
 											</select>
 										</td>
-										<td>
+										<td class="text-center">
 											<div class="checkbox">
 												<label>
 													<input type="checkbox" id="blankCheckbox" value="option1" aria-label="..." checked>
@@ -508,7 +500,7 @@
 												<option>Пресса</option>
 											</select>
 										</td>
-										<td>
+										<td class="text-center">
 											<div class="checkbox">
 												<label>
 													<input type="checkbox" id="blankCheckbox" value="option1" aria-label="..." checked>
@@ -522,8 +514,8 @@
 					</div>
 				</div>
 				<div class="row div-buttons-list-end px-3">
-					<button class="col-lg-3 col-sm col-12 mr-sm-2 mt-3 btn btn-default">Добавить человека</button>
-					<button class="col-xl-3 col-lg-4 col-sm col-12 ml-sm-2 mt-3 btn btn-default" data-toggle="modal" data-target="#myModal">Добавить пустой бейдж без ФИО</button>
+					<button class="col-lg-3 col-sm col-12 mr-sm-2 mt-3 btn btn-blue">Добавить человека</button>
+					<button class="col-xl-4 col-lg-4 col-sm col-12 ml-sm-2 mt-3 btn btn-blue" data-toggle="modal" data-target="#myModal">Добавить пустой бейдж без ФИО</button>
 					<button type="button" class="col-lg-4 col-12 mt-3 mr-lg-3 ml-lg-auto btn btn-primary float-right">Генерировать бейджи для печати (9)</button>
 				</div>
 
@@ -573,7 +565,7 @@
 
 	<script>
 		$('document').ready(function () {
-		    $("#fileElem").change(function () {
+		    $("#fileBackground").change(function () {
 		        if (this.files && this.files[0]) {
 		            var reader = new FileReader();
 		            reader.onload = function (e) {
@@ -588,10 +580,28 @@
 			};
 
 			dropContainer.ondrop = function(evt) {
-				fileElem.files = evt.dataTransfer.files;
+				fileBackground.files = evt.dataTransfer.files;
 				evt.preventDefault();
 			};
-			
+						
+			$("#filePartner").change(function () {
+		        if (this.files && this.files[0]) {
+		            var reader = new FileReader();
+		            reader.onload = function (e) {
+		                $("#logoImage").attr('src', e.target.result);
+		            }
+		            reader.readAsDataURL(this.files[0]);
+		        }
+		    });
+
+		    dropPartner.ondragover = dropPartner.ondragenter = function(evt) {
+			 	evt.preventDefault();
+			};
+
+			dropPartner.ondrop = function(evt) {
+				filePartner.files = evt.dataTransfer.files;
+				evt.preventDefault();
+			};
     	});
 	</script>
 
