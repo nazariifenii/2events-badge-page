@@ -8,54 +8,151 @@
 	<!-- Latest compiled JavaScript -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	    crossorigin="anonymous">
-	    <link rel="stylesheet" href="css/colorpicker.css">
+	<link rel="stylesheet" href="css/colorpicker.css">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<!-- Latest compiled and minified CSS -->
 </head>
 
 <body>
-	<div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="/uk/" id="home" style="padding-top:10px;"><img src="/images/landing/2evenl_logo_140.png" alt=""></a>
-			</div>
-			<div class="navbar-collapse collapse" id="kane-navigation">
-				<ul class="nav navbar-nav main-navigation">
-					<li><a href="#features">Переваги</a></li>
-					<li><a href="#brief1">Базовий функціонал</a></li>
-					<li><a href="#brief2">Звичайний нетворкінг</a></li>
-					<li><a href="#services">Розширений нетворкінг</a></li>
-					<li><a href="#stat">Статистика використання</a></li>
-					<li><a href="#packeges">Ціни</a></li>
-				</ul>
-                <div class="language_switcher">
-	    			<a class="current" data-lang="uk"><img src="/images/flags/uk.png" alt="Українська"/></a>
-    				<div class="other">
-                        <a href="/ru/Buy_app_for_event" data-lang="ru"><img src="/images/flags/ru.png" alt="Русский"/></a>
-                        <a href="/en/Buy_app_for_event" data-lang="en"><img src="/images/flags/en.png" alt="English"/></a>
-                        <a href="/pl/Buy_app_for_event" data-lang="pl"><img src="/images/flags/pl.png" alt="Polski"/></a>
-                    </div>
-				</div>			
+	<header class="main_header new scroll">
+		<div class="search-header">
+			<div class="container">
+				<form action="/uk/events">
+					<input type="text" name="search" class="search-item-text ui-autocomplete-input" data-search="/uk/events/autocomplete" value=""
+					    placeholder="Введіть назву заходу" autocomplete="off" spellcheck="false">
+					<input type="submit" class="sbm" value="Пошук">
+				</form>
 			</div>
 		</div>
-	</div>
+		<div class="top-header">
+			<div class="container new">
+				<div class="col language-choose">
+					<div class="language_switcher">
+						<a class="current" data-lang="uk">
+							<img src="/images/flags/uk.png" alt="Українська">
+						</a>
+						<div class="other">
+							<a href="/ru/" data-lang="ru">
+								<img src="/images/flags/ru.png" alt="Русский">
+							</a>
+							<a href="/en/" data-lang="en">
+								<img src="/images/flags/en.png" alt="English">
+							</a>
+							<a href="/pl/" data-lang="pl">
+								<img src="/images/flags/pl.png" alt="Polski">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col col-separate"></div>
+				<div class="login col">
+
+					<div class="loginBtn">
+						<a class="logB log2">Вхід</a>
+					</div>
+					<div class="language_switcher">
+						<a class="current" data-lang="uk">
+							<img src="/images/flags/uk.png" alt="Українська">
+						</a>
+						<div class="other">
+							<a href="/ru/" data-lang="ru">
+								<img src="/images/flags/ru.png" alt="Русский">
+							</a>
+							<a href="/en/" data-lang="en">
+								<img src="/images/flags/en.png" alt="English">
+							</a>
+							<a href="/pl/" data-lang="pl">
+								<img src="/images/flags/pl.png" alt="Polski">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col col-separate"></div>
+				<div class="search">
+					<a href="#" class="open-search" title="Пошук"></a>
+				</div>
+				<div class="col col-separate"></div>
+				<div class="city">
+					<input type="hidden" id="auto-city" class="auto-city" value="" data-url="/uk/profiles/updateCity">
+					<div class="pop">
+						<p>Your city
+							<b></b>?</p>
+						<div class="action">
+							<a href="#" class="btn yes">Yes</a>
+							<a href="#" class="choose">Choose another</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container second-header new">
+			<div class="row">
+				<div class="logo_wrapper col-xs-4 col-md-2">
+					<a href="/uk/" class="logo">
+						<img src="https://2event.com/img/common/logo.png" alt="logo image_src" class="img-responsive">
+					</a>
+				</div>
+				<div class="col-xs-8 col-md-3 pull-right">
+					<div class="create-btn ">
+						<button type="button" class="pull-xs-right navbar-toggle collapsed" data-toggle="collapse" data-target=".top_menu">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="#" class="btn btn-create-event logB log2">Створити подію</a>
+					</div>
+				</div>
+				<div class="menu-center col-xs-12 col-md-7">
+
+					<nav class="top_menu navbar-collapse collapse" role="navigation" aria-expanded="true">
+						<div class="navigations_controls ">
+							<ul class="navigation" id="yw1">
+								<li>
+									<a href="/uk/Buy_app_for_event">Додаток для подій
+										<div class="elipsys"></div>
+									</a>
+								</li>
+								<li>
+									<a href="/uk/events">Афіша
+										<span>(1 480 981)</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="apBox visible-sm visible-xs">
+			<div class="container">
+				<ul class="">
+					<li class="logo2event">
+						<a href="/uk/" class="logo">
+							<img src="https://2event.com/img/common/logo.png" alt="logo image_src" class="img-responsive">
+						</a>
+					</li>
+					<li class="apStor">
+						<a href="/uk/itunes"></a>
+					</li>
+					<li class="googPl">
+						<a href="/uk/gplay"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
 
 	<div class="container text-center backround-white main-content">
 		<h4 class="text-uppercase">Создать бейдж</h4>
 		<div class="text-left">
 			<div class="div-section-header-title">
-				<span class="menu-item-counter">1</span>
-				<p class="text-uppercase margin-bottom-zero">Размер бейджа</p>
+				<span class="menu-item-counter">1</span> 
+				<p class="text-uppercase margin-bottom-zero font-size-18">Размер бейджа</p>
 			</div>
 
-			<hr class="margin-top-zero" />
+			<hr class="hr-title"/>
 			<div class="container">
 				<div class="div-badge-size text-left">
 					<label class="radio-inline margin-right-radio">
@@ -74,10 +171,10 @@
 		<div class="text-left">
 			<div class="div-section-header-title">
 				<span class="menu-item-counter">2</span>
-				<p class="text-uppercase margin-bottom-zero">Визуальное представление</p>
+				<p class="text-uppercase margin-bottom-zero font-size-18">Визуальное представление</p>
 			</div>
-			<hr class="margin-top-zero" />
-			<div class="container-fluid">
+			<hr class="hr-title" />
+			<div class="container-fluid mx-xl-3">
 				<div class="row">
 					<div class="col-xl-5 div-choose-role mx-auto">
 						<div class="badge-header row">
@@ -231,8 +328,7 @@
 																																		<tr style="border-collapse:collapse;">
 																																			<td align="center" style="padding-top:15px;padding-bottom:18px;Margin:0;">
 																																				<a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-size:14px;text-decoration:underline;color:#1376C8;">
-																																					<img src="https://evprg.stripocdn.email/content/guids/1234/images/5662886201487156934307.png" alt="" class="img-qr"
-																																					    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:90px;"> </a>
+																																					<img src="https://evprg.stripocdn.email/content/guids/1234/images/5662886201487156934307.png" alt="" class="img-qr" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:90px;"> </a>
 																																			</td>
 																																		</tr>
 																																	</tbody>
@@ -267,12 +363,12 @@
 																												<td align="center" style="padding:0;Margin:0;">
 																													<a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-size:14px;text-decoration:underline;color:#1376C8;">
 																														<img id="logoImage" src="https://evprg.stripocdn.email/content/guids/1234/images/5662886201487156934307.png" alt="" height="50"
-																														    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;"> </a>
+																														    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:100%;"> </a>
 																												</td>
 																											</tr>
 																										</tbody>
 																									</table>
-																								</td>																								
+																								</td>
 																							</tr>
 																						</tbody>
 																					</table>
@@ -335,24 +431,31 @@
 								<form id="dropContainer" class="my-form">
 									<input class="file-input" type="file" id="fileBackground">
 									<label class="button labelFile d-flex flex-column align-items-center text-center" for="fileBackground">
-										<img src="img/camera-icon.png" style="height: 36px; width: 36px;"/>
+										<img src="img/camera-icon.png" style="height: 36px; width: 36px;" />
 										<span class="text-uppercase font-13">Загрузить фон</span>
 									</label>
 								</form>
 							</div>
-							<div class="col-md col-12 mt-md-0 mt-3 p-md-2 p-0 align-self-end">
+							<div class="col-md col-12 mt-md-0 mt-3 p-md-2 p-0 align-self-end padding-bottom-zero">
 								<div class="download-requirements-text">
 									<span class="color-red inline mx-1">*</span>
-									<p>Рекомендованный размер<b>1240х1748px</b> (форматы *.png, *.jpg)<br/><br/>(рекомендуєм размещать на фоне в верхней части логотип мероприятия, в нижней части - логотипы спонсоров)</p>
+									<p>Рекомендованный размер
+										<b>1240х1748px</b> (форматы *.png, *.jpg)
+										<br/>
+										<br/>(рекомендуєм размещать на фоне в верхней части логотип мероприятия, в нижней части - логотипы спонсоров)</p>
 								</div>
 								<div class="div-download-badge-template">
 									<span class="fas fa-download-alt" aria-hidden="true"></span>
-									<a href="#"><img src="img/download-icon.png" style="height: 16px;"/> Скачать шаблон бейджа *.psd</a>
+									<a href="#">
+										<img src="img/download-icon.png" style="height: 16px;" /> Скачать шаблон бейджа *.psd</a>
 								</div>
 							</div>
 						</div>
 						<div class="row-fluid div-choose-role-color">
-							<p class="text-uppercase"><b>РОЛИ НА МЕРОПРИЯТИИ:</b><span class="color-red inline mx-1">*</span></p>
+							<p class="text-uppercase">
+								<b>РОЛИ НА МЕРОПРИЯТИИ:</b>
+								<span class="color-red inline mx-1">*</span>
+							</p>
 							<ul>
 								<li class="li-role-color-picker">
 									<div class="row ml-0 w-100">
@@ -362,11 +465,11 @@
 											<option>Спикер</option>
 											<option>Пресса</option>
 										</select>
-										<div class="input-group input-color-picker colorpicker-component col-md-4 col">
+										<div class="input-group input-color-picker col-md-4 col">
 											<span class="input-group-addon d-flex justify-content-center align-items-center">
 												<i></i>
 											</span>
-											<input type="text" class="form-control" value="#00aabb"/>
+											<input type="text" class="form-control" value="#00aabb" />
 										</div>
 										<button type="button" class="close" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
@@ -381,7 +484,7 @@
 											<option>Спикер</option>
 											<option>Пресса</option>
 										</select>
-										<div class="input-group input-color-picker colorpicker-component col-md-4 col">
+										<div class="input-group input-color-picker col-md-4 col">
 											<span class="input-group-addon d-flex justify-content-center align-items-center">
 												<i></i>
 											</span>
@@ -390,8 +493,8 @@
 										<button type="button" class="close" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>
-										<div class="col-md col-12 px-md-3 p-0 mt-md-0 mt-4">
-											<button type="button" class="btn btn-blue button-add-role w-100">Добавить роль</button>
+										<div class="col-md col-12 px-md-3 p-0 mt-md-0 mt-4 text-lg-right">
+											<button type="button" class="btn btn-blue ml-md-auto mx-auto w-75 w-sm-100">Добавить роль</button>
 										</div>
 									</div>
 								</li>
@@ -403,14 +506,16 @@
 								<form id="dropPartner" class="my-form">
 									<input class="file-input" type="file" id="filePartner">
 									<label class="button labelFile d-flex flex-column align-items-center text-center" for=filePartner>
-										<img src="img/camera-icon.png" style="height: 36px; width: 36px;"/>
+										<img src="img/camera-icon.png" style="height: 36px; width: 36px;" />
 										<span class="text-uppercase font-13">Добавить изображение</span>
 									</label>
 								</form>
 							</div>
 							<div class="col-md col-12 mt-md-0 mt-3 p-md-2 p-0 align-self-end">
 								<div class="download-requirements-text">
-									<span class="color-red inline mx-1">*</span><p>Рекомендованный размер<b>1080pх 250px</b> (форматы *.png, *.jpg)</p>
+									<span class="color-red inline mx-1">*</span>
+									<p>Рекомендованный размер
+										<b>1080х250px</b> (форматы *.png, *.jpg)</p>
 								</div>
 							</div>
 						</div>
@@ -422,14 +527,17 @@
 		<div class="row-fluid text-left">
 			<div class="div-section-header-title">
 				<span class="menu-item-counter">3</span>
-				<p class="text-uppercase margin-bottom-zero">Список людей и их роли на мероприятии (организаторы, участники)</p>
+				<p class="text-uppercase margin-bottom-zero font-size-18">Список людей и их роли на мероприятии (организаторы, участники)</p>
 			</div>
-			<hr class="margin-top-zero" />
+			<hr class="hr-title" />
 			<div class="container">
 				<div class="row">
 					<div class="container col-md-12">
-						<p>Выберите мероприятие, для которого вы хотите сгенерировать бейджи учасніков</p>
-						<p class="text-uppercase"><b>Название мероприятия:</b><span class="color-red inline mx-1">*</span></p>
+						<p>Выберите мероприятие, для которого вы хотите сгенерировать бейджи учасников</p>
+						<p class="text-uppercase">
+							Название мероприятия:
+							<span class="color-red inline mx-1">*</span>
+						</p>
 						<ul>
 							<li class="li-role-color-picker">
 								<div class="row ml-0 w-100">
@@ -445,11 +553,16 @@
 						</ul>
 						<a href="#">Создать новое мероприятие на 2Event.com</a>
 						<hr/>
-						<p>Если у Вас не было продаж через 2Event, Вы можете загрузить список своих участников мероприятия с файла *.xls. (Ваши бейджи будут без  QR-кода, который можна будет сканировать через приложение 2Event (Android, iOS) при встрече между участниками, обмениваясь таким способом контактами).</p>
-						<p>Шаблон списка участников можно скачать здесь: <a href="#">шаблон списка участников.xls</a></p>
-						<button class="btn btn-blue">Загрузить свой .xls файл со списком  участников мероприятия</button>
+						<p>Если у Вас не было продаж через 2Event, Вы можете загрузить список своих участников мероприятия с файла *.xls. (Ваши
+							бейджи будут без QR-кода, который можна будет сканировать через приложение 2Event (Android, iOS) при встрече между
+							участниками, обмениваясь таким способом контактами).</p>
+						<p>Шаблон списка участников можно скачать здесь:
+							<a href="#">шаблон списка участников.xls</a>
+						</p>
+						<button class="btn btn-blue btn-dwnd-xls">Загрузить свой .xls файл со списком участников мероприятия</button>
 						<hr/>
-						<p>Здесь вы можете отредактировать список людей, для которых нужно создать бейдж (добавить человека, изменить ФИО, компанию, должность) </p>
+						<p>Здесь вы можете отредактировать список людей, для которых нужно создать бейдж (добавить человека, изменить ФИО, компанию,
+							должность) </p>
 						<div class="table-responsive">
 							<table class="table table-hover">
 								<thead>
@@ -514,7 +627,7 @@
 					</div>
 				</div>
 				<div class="row div-buttons-list-end px-3">
-					<button class="col-lg-3 col-sm col-12 mr-sm-2 mt-3 btn btn-blue">Добавить человека</button>
+					<button class="col-lg-2 col-sm col-12 mr-sm-2 mt-3 btn btn-blue">Добавить человека</button>
 					<button class="col-xl-4 col-lg-4 col-sm col-12 ml-sm-2 mt-3 btn btn-blue" data-toggle="modal" data-target="#myModal">Добавить пустой бейдж без ФИО</button>
 					<button type="button" class="col-lg-4 col-12 mt-3 mr-lg-3 ml-lg-auto btn btn-primary float-right">Генерировать бейджи для печати (9)</button>
 				</div>
@@ -565,50 +678,50 @@
 
 	<script>
 		$('document').ready(function () {
-		    $("#fileBackground").change(function () {
-		        if (this.files && this.files[0]) {
-		            var reader = new FileReader();
-		            reader.onload = function (e) {
-		                document.getElementById('bgtable').style.backgroundImage = "url(" + e.target.result + ")";
-		            }
-		            reader.readAsDataURL(this.files[0]);
-		        }
-		    });
+			$("#fileBackground").change(function () {
+				if (this.files && this.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function (e) {
+						document.getElementById('bgtable').style.backgroundImage = "url(" + e.target.result + ")";
+					}
+					reader.readAsDataURL(this.files[0]);
+				}
+			});
 
-		    dropContainer.ondragover = dropContainer.ondragenter = function(evt) {
-			 	evt.preventDefault();
+			dropContainer.ondragover = dropContainer.ondragenter = function (evt) {
+				evt.preventDefault();
 			};
 
-			dropContainer.ondrop = function(evt) {
+			dropContainer.ondrop = function (evt) {
 				fileBackground.files = evt.dataTransfer.files;
 				evt.preventDefault();
 			};
-						
-			$("#filePartner").change(function () {
-		        if (this.files && this.files[0]) {
-		            var reader = new FileReader();
-		            reader.onload = function (e) {
-		                $("#logoImage").attr('src', e.target.result);
-		            }
-		            reader.readAsDataURL(this.files[0]);
-		        }
-		    });
 
-		    dropPartner.ondragover = dropPartner.ondragenter = function(evt) {
-			 	evt.preventDefault();
+			$("#filePartner").change(function () {
+				if (this.files && this.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function (e) {
+						$("#logoImage").attr('src', e.target.result);
+					}
+					reader.readAsDataURL(this.files[0]);
+				}
+			});
+
+			dropPartner.ondragover = dropPartner.ondragenter = function (evt) {
+				evt.preventDefault();
 			};
 
-			dropPartner.ondrop = function(evt) {
+			dropPartner.ondrop = function (evt) {
 				filePartner.files = evt.dataTransfer.files;
 				evt.preventDefault();
 			};
-    	});
+		});
 	</script>
 
 	<script>
-	    $(function () {
-	        $('.input-color-picker').colorpicker();
-	    });
+		$(function () {
+			$('.input-color-picker').colorpicker();
+		});
 	</script>
 </body>
 

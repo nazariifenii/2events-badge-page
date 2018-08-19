@@ -932,7 +932,8 @@
       }
       this.picker.css({
         top: offset.top + element.outerHeight(),
-        left: offset.left
+        left: offset.left,
+        position: 'absolute'
       });
     },
     show: function(e) {

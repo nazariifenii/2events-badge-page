@@ -139,12 +139,10 @@ ul {
   margin: 0;
   padding: 0;
 }
-
 li {
   margin-top: 17px;
   list-style: none;
 }
-
 .li-role-color-picker {
   display: flex;
   flex-direction: row;
@@ -167,7 +165,6 @@ li {
   display: flex;
   align-items: center;
 }
-
 .modal-empty-badge-amount {
   margin-top: 15px;
 }
@@ -319,7 +316,6 @@ p {
   margin-right: 10px;
   vertical-align: middle;
 }
-
 .button {
   display: inline-block;
   padding: 10px;
@@ -354,13 +350,11 @@ p {
     width: 38px;
   }
 }
-
 .btn-blue {
   background-color: $white;
   border: 1px solid $light-blue;
   color: $light-blue;
 }
-
 .btn-blue:hover {
   background-color: #007bff;
   color: $white;
