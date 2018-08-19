@@ -3,6 +3,10 @@ $white: #fff;
 $light-blue: #44a3db;
 $margin-main-content-left: 40px;
 
+p, a {
+     font-size: 13px;
+}
+
 body {
   background-color: $light-grey;
   margin-bottom: 45px;
@@ -29,8 +33,8 @@ body {
 }
 
 .menu-item-counter {
-  height: 25px;
-  width: 25px;
+  min-height: 25px;
+  min-width: 25px;
   border-radius: 50%;
   color: $white;
   margin-right: 10px;
@@ -51,6 +55,7 @@ body {
   outline: 1px solid #ccc;
   //margin-left: 40px;
   padding: 0;
+  max-width: 463px;
 }
 
 .upload-drop-zone {
@@ -155,7 +160,7 @@ li {
 @-ms-viewport {
   width: device-width;
   }
-@media only screen and (max-width: 600px) {p, ul li, ol li, a { font-size: 16px !important } h1 { font-size: 30px !important; text-align: center } h2 { font-size: 26px !important; text-align: center } h3 { font-size: 20px !important; text-align: center } h1 a { font-size: 30px !important } h2 a { font-size: 26px !important } h3 a { font-size: 20px !important } .es-menu td a { font-size: 16px !important } .es-header-body p, .es-header-body ul li, .es-header-body ol li, .es-header-body a { font-size: 16px !important } .es-footer-body p, .es-footer-body ul li, .es-footer-body ol li, .es-footer-body a { font-size: 16px !important } .es-infoblock p, .es-infoblock ul li, .es-infoblock ol li, .es-infoblock a { font-size: 12px !important } *[class="gmail-fix"] { display: none !important } .es-m-txt-c, .es-m-txt-c h1, .es-m-txt-c h2, .es-m-txt-c h3 { text-align: center !important } .es-m-txt-r, .es-m-txt-r h1, .es-m-txt-r h2, .es-m-txt-r h3 { text-align: right !important } .es-m-txt-l, .es-m-txt-l h1, .es-m-txt-l h2, .es-m-txt-l h3 { text-align: left !important } .es-m-txt-r a img, .es-m-txt-c a img, .es-m-txt-l a img { display: inline !important } .es-button-border { display: block !important } .es-button { font-size: 20px !important; display: block !important; border-width: 10px 0px 10px 0px !important } .es-btn-fw { border-width: 10px 0px !important; text-align: center !important } .es-adaptive table, .es-btn-fw, .es-btn-fw-brdr, .es-left, .es-right { width: 100% !important } .es-content table, .es-header table, .es-footer table, .es-content, .es-footer, .es-header { width: 100% !important; max-width: 600px !important } .es-adapt-td { display: block !important; width: 100% !important } .adapt-img { width: 100% !important; height: auto !important } .es-m-p0 { padding: 0px !important } .es-m-p0r { padding-right: 0px !important } .es-m-p0l { padding-left: 0px !important } .es-m-p0t { padding-top: 0px !important } .es-m-p0b { padding-bottom: 0 !important } .es-m-p20b { padding-bottom: 20px !important } .es-hidden { display: none !important } table.es-table-not-adapt, .esd-block-html table { width: auto !important } table.es-social { display: inline-block !important } table.es-social td { display: inline-block !important } }
+@media only screen and (max-width: 400px) { p, ul li, ol li, a { font-size: 16px !important } h1 { font-size: 30px !important} h2 { font-size: 26px !important} h3 { font-size: 20px !important} h1 a { font-size: 30px !important } h2 a { font-size: 26px !important } h3 a { font-size: 20px !important } .es-menu td a { font-size: 16px !important } .es-header-body p, .es-header-body ul li, .es-header-body ol li, .es-header-body a { font-size: 16px !important } .es-footer-body p, .es-footer-body ul li, .es-footer-body ol li, .es-footer-body a { font-size: 16px !important } .es-infoblock p, .es-infoblock ul li, .es-infoblock ol li, .es-infoblock a { font-size: 12px !important } .adapt-img { width: 100% !important; height: auto !important } .es-hidden { display: none !important } .btn { font-size: 12px !important } .img-qr { width: 50px !important} .div-badge { height: 430px !important } .p-scan { font-size: 9px !important }}
 #outlook a {
 padding: 0;
 }
@@ -183,16 +188,20 @@ font-weight: inherit !important;
 line-height: inherit !important;
 }
 
-#drop-area {
+.drop-area {
   border: 2px dashed #ccc;
-  border-radius: 20px;
   width: 480px;
   font-family: sans-serif;
-  margin: 100px auto;
+  margin: auto;
   padding: 20px;
+  color: $light-blue;
 }
-#drop-area.highlight {
+.drop-area.highlight {
   border-color: purple;
+}
+.labelFile {
+  background-color: white !important;
+  border: none !important;
 }
 p {
   margin-top: 0;
@@ -220,6 +229,41 @@ p {
 .button:hover {
   background: #ddd;
 }
-#fileElem {
+.file-input {
   display: none;
+}
+.input-group-addon {
+  width: 38px;
+  height: 38px;
+  border-left: 1px solid #ced4da;
+  border-top: 1px solid #ced4da;
+  border-bottom: 1px solid #ced4da;
+  i {
+    display: inline-block;
+    cursor: pointer;
+    height: 38px;
+    width: 38px;
+  }
+}
+.btn-blue {
+  background-color: $white;
+  border: 1px solid $light-blue;
+  color: $light-blue;
+}
+.btn-blue:hover {
+  background-color: #007bff;
+  color: $white;
+}
+.close {
+  color: #e75f5f;
+}
+.close:hover {
+  color: #d81111 !important;
+}
+.font-13 {
+     font-size: 13px;
+}
+.btn {
+  white-space:normal !important;
+  max-width:98vw;
 }
