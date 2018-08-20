@@ -45,7 +45,7 @@ body {
 }
 
 .margin-right-radio{
-  margin-right: 10px;
+  margin-right: 100px;
 }
 .margin-bottom-zero {
   margin-bottom: 0;
@@ -161,6 +161,11 @@ li {
   width: device-width;
   }
 @media only screen and (max-width: 400px) { p, ul li, ol li, a { font-size: 16px !important } h1 { font-size: 30px !important} h2 { font-size: 26px !important} h3 { font-size: 20px !important} h1 a { font-size: 30px !important } h2 a { font-size: 26px !important } h3 a { font-size: 20px !important } .es-menu td a { font-size: 16px !important } .es-header-body p, .es-header-body ul li, .es-header-body ol li, .es-header-body a { font-size: 16px !important } .es-footer-body p, .es-footer-body ul li, .es-footer-body ol li, .es-footer-body a { font-size: 16px !important } .es-infoblock p, .es-infoblock ul li, .es-infoblock ol li, .es-infoblock a { font-size: 12px !important } .adapt-img { width: 100% !important; height: auto !important } .es-hidden { display: none !important } .btn { font-size: 12px !important } .img-qr { width: 50px !important} .div-badge { height: 430px !important } .p-scan { font-size: 9px !important }}
+@media only screen and (max-width: 767px) {
+     .button-add-role{
+          width: 100% !important;
+     }
+}
 #outlook a {
 padding: 0;
 }
